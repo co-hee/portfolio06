@@ -11,12 +11,14 @@ $(function () {
 
 
     $('.event_slide_wrap').slick({
-
+        arrows: false,
+        autoplay: false,
+        slidesToShow: 3,
     });
 
+    // $('.dining_slide_wrap .dining_slide .slider_img_cont .list').slick({
 
-
-
+    // });
 
 
 

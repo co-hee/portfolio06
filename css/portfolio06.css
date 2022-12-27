@@ -145,6 +145,7 @@
 
 .main_event {
     padding: 100px 0;
+    border-bottom: 1px solid #ddd;
 }
 
 .main_event .inner {
@@ -178,31 +179,120 @@
     margin: 0 0 60px 0;
 }
 
+.event_slide_wrap {}
+
+.main_event .event_slide_wrap .event_slide {
+    width: 100%;
+    margin: 0 15px;
+}
+
+.main_event .event_slide_wrap .event_slide figure {
+    position: relative;
+    margin: 0 0 30px 0;
+}
+
+.main_event .event_slide figure p {
+    position: absolute;
+    bottom: -16px;
+    left: 0;
+    transform: translate(0, 0);
+    padding: 8px 30px 9px;
+    background: #c6a582;
+    color: #fff;
+}
 
 
+.main_event .event_slide .event_txt strong {
+    font-size: 18px;
+    color: #333;
+    margin: 0 0 15px 0;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.main_event .event_slide .event_txt p {
+    font-weight: 300;
+    margin: 0 0 15px 0;
+}
 
 /* } main_event */
+
+.main_dining {
+    padding: 100px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.main_dining .inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main_dining .tab {
+    display: flex;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    right: 0;
+}
+
+.main_dining .tab li {
+
+    margin: 0 60px 60px 0;
+}
+
+.main_dining .dining_tit {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main_dining .dining_tit h2 {
+    position: relative;
+    font-size: 60px;
+    margin: 0 0 15px 0;
+    font-family: 'Playfair Display', serif;
+    font-weight: 200;
+}
+
+.main_dining .dining_tit p {
+    position: relative;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: -0.02rem;
+
+    margin: 0 0 60px 0;
+}
+
+.main_dining .dining_slide .tab_slide {
+    display: flex;
+}
+
+.main_dining .dining_slide .tab_slide .slider_info_cont {
+    flex: 0.8;
+    flex-direction: column;
+    margin: 0 50px 0 0;
+}
+
+.main_dining .dining_slide .tab_slide .slider_info_cont a {
+    text-align: right;
+    display: inline-block;
+    padding: 16px 35px;
+    background: #c6a582;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.main_dining .dining_slide .slider_info_cont .slider_img_cont {
+    flex: 1.2;
+}
+
+.main_dining .dining_slide .slider_info_cont .info_txt strong {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.main_dining .dining_slide .slider_info_cont .info_txt p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.3;
+}
