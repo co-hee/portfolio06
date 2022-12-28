@@ -26,6 +26,7 @@ body {
     /* 폰트의 배수로 키움. 상하 여백 */
     letter-spacing: -0.025em;
     font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1.3;
 }
 
 p {
@@ -46,4 +47,8 @@ em,
 strong,
 i {
     font-style: normal;
+}
+
+strong {
+    display: block;
 }
