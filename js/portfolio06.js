@@ -46,6 +46,12 @@ $(function () {
         $('.special_slide_wrap .special_slide>div').eq(idx).addClass('on').siblings().removeClass('on');
     });
 
+    $('.main_room .tab li').on('click', function (e) {
+        e.preventDefault();
+        var idx = $(this).index();
+        $('.room_slide_wrap .room_slide>div').eq(idx).addClass('on').siblings().removeClass('on');
+    });
+
 
 
 
