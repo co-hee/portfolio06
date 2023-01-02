@@ -251,11 +251,27 @@
 
 .mainVisual .slick-dots>li {
     display: inline-block;
-    width: 0.4rem;
-    height: 0.4rem;
+    width: 1.2rem;
+    height: 1.2rem;
 
     margin: 180px 30px 0;
 
+    transition: 0.5s;
+
+
+    border-radius: 50%;
+
+    z-index: 999;
+
+}
+
+.mainVisual .slick-dots>li::before {
+    content: '';
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.4rem;
+
+    transform: translate(0, -3px);
     transition: 0.5s;
 
     background: #fff;

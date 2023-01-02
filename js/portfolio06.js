@@ -22,7 +22,7 @@ $(function () {
         pauseOnHover: false,
         pauseOnFocus: false,
         fade: true,
-        speed: 1600,
+        speed: 500,
     });
 
 
@@ -35,12 +35,10 @@ $(function () {
     });
 
     $('.slider_img_cont .list').slick({
+        arrows: false,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 4000,
         fade: true,
-        speed: 1000,
-        prevArrow: $('.xi-angle-left-thin'),
-        nextArrow: $('.xi-angle-right-thin'),
     });
 
 
@@ -65,6 +63,14 @@ $(function () {
         var idx = $(this).index();
         $(this).addClass('on').siblings().removeClass('on');
         $('.room_slide_wrap .room_slide>div').eq(idx).addClass('on').siblings().removeClass('on');
+    });
+
+
+    $('.main_room .xi-angle-left-thin').on('click', function () {
+        $('.room_slide .slider_img_cont .list').slick('slickPrev');
+    });
+    $('.main_room .xi-angle-right-thin').on('click', function () {
+        $('.room_slide .slider_img_cont .list').slick('slickNext');
     });
 
 
